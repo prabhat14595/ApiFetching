@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    {{>header}}
+    {{>navbar}}
+    
+    <body>
+
+        <div class="container center-align" style="margin-top:1cm">
+            <i class=" large material-icons  green-text lighten-2">opacity</i>
+        </div>
+      
+      {{#each data}}
+        <div>
+          <h3 class="grey-text">
+            {{data.id}}
+            {{data.first_name}}
+            {{data.last_name}}     
+          </h3>
+          <img src={{data.avatar}} width="200" height="200">
+        </div> 
+      {{/each}}
+      
+    </body>
+    {{> footer}}
+</html>

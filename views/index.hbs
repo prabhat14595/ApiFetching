@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    {{>header}}
+    {{>navbar}}
+    
+    <body>
+
+      <header class="w3-container w3-padding w3-text-grey" id="myHeader" style="margin-top:1cm"> 
+       <div class="w3-center">
+        <h4>NodeJS WEB SITE</h4>
+       </div>
+     </header>
+
+
+
+  <!-- will be the new look -->
+  
+<div class="w3-row-padding w3-center w3-margin-top">
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3 class="w3-text-blue">{{body2.first_name}}  {{body.last_name}}</h3><br>
+  <p class="w3-center"><img src={{body.avatar}} class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+  <p><b>ID::</b> {{body2.id}}</p>
+  <p><b>FirstNAME::</b> {{body.first_name}} </p> 
+  <p><b>LastNAME::</b> {{body.last_name}}</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3 class="w3-text-red">{{body1.first_name}}  {{body1.last_name}}</h3><br>
+  <p class="w3-center"><img src={{body1.avatar}} class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+  <p><b>ID::</b> {{body1.id}}</p>
+  <p><b>FirstNAME::</b> {{body1.first_name}} </p> 
+  <p><b>LastNAME::</b> {{body1.last_name}}</p>
+  </div>
+</div>
+
+<div class="w3-third">
+  <div class="w3-card w3-container" style="min-height:460px">
+  <h3 class="w3-text-green">{{body2.first_name}}  {{body2.last_name}}</h3><br>
+  <p class="w3-center"><img src={{body2.avatar}} class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+  <p><b>ID::</b> {{body2.id}}</p>
+  <p><b>FirstNAME::</b> {{body2.first_name}} </p> 
+  <p><b>LastNAME::</b> {{body2.last_name}}</p>
+  </div>
+</div>
+
+</div>
+
+
+    </body>
+    {{> footer}}
+</html>
